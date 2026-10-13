@@ -46,7 +46,7 @@ This is a simple client. if you fill some words in textfield, push '送信する
 <img src="./Images/readme_client.png" width=300>
 
 
-## verify certificate 
+## Check TCP Connection without iOS Client Application
 if you don't have Xcode but want to check certificate verification, run ` % curl -v --cacert ./cert.pem https://127.0.0.1:50051` after running server.
 
 if you get such log, TLS connection has been established successfully!
