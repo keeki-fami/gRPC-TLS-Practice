@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+package echo;
+
+service Echo {
+    rpc doEcho (echoRequest) returns (echoResponse) {}
+}
+
+message echoRequest {
+    string text = 1;
+}
+
+message echoResponse {
+    string text = 1;
+}

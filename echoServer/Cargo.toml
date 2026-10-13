@@ -1,0 +1,16 @@
+[package]
+name = "echoServer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tonic = {
+    version = "*",
+    features = ["tls-ring"],
+}
+prost = "0.14"
+tonic-prost = "*"
+tokio = { version = "1.53", features = ["macros", "rt-multi-thread", "fs"] }
+
+[build-dependencies]
+tonic-prost-build = "*"
