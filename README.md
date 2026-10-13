@@ -34,7 +34,7 @@ then you should put `cert.key.pem` and `cert.pem` at `./echoServer/cert`.
 You should use certificate in DER format if you use custom CA certificate, so run above command to get `cert.der`.
 
 ```zsh
-openssl x509 -inform PEM in cert.pem -outform PEM cert.der
+openssl x509 -in root.pem -inform PEM -out root.der -outform DER
 ```
 
 After you get it, put it at `./echoClient/echoClient`.
